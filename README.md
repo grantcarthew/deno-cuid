@@ -10,12 +10,21 @@ This version of `cuid` is a conversion to [Deno](https://deno.land/) from the [o
 
 ## Example
 
+**Warning**: Due to the [Deno.hostname()](https://github.com/denoland/deno/blob/master/Releases.md) API call you will need to use both the `--unstable` flag and the `--allow-env` flag.
+
 ```js
-import cuid from 'https://todo';
+// demo.js
+import { cuid } from 'https://deno.land/x/cuid/index.js';
 
 console.log( cuid() );
 
 // cjld2cjxh0000qzrmn831i7rn
+```
+
+To run the above file or import the module you will need:
+
+```sh
+deno run --allow-env --unstable demo.js
 ```
 
 ### Broken down
