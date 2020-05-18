@@ -14,7 +14,8 @@ This version of `cuid` is a conversion to [Deno](https://deno.land/) from the [o
 
 ```js
 // demo.js
-import { cuid } from 'https://deno.land/x/cuid/index.js';
+// Change the following url to the latest version
+import { cuid } from 'https://deno.land/x/cuid@v1.0.0/index.js';
 
 console.log( cuid() );
 
